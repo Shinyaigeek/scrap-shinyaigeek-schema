@@ -1,0 +1,9 @@
+{
+  "$id": "comments",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Comments",
+  "type": "array",
+  "items": {
+    "$ref": "/comment.json"
+  }
+}

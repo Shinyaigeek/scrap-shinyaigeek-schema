@@ -1,0 +1,40 @@
+{
+  "$id": "thread",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Thread",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "The thread's id"
+    },
+    "title": {
+      "type": "string",
+      "description": "The thread's title"
+    },
+    "slug": {
+      "type": "string",
+      "description": "The thread's slug"
+    },
+    "content": {
+      "type": "string",
+      "description": "The thread's content"
+    },
+    "comments": {
+      "description": "The thread's content",
+      "$ref": "/comments.json"
+    },
+    "published": {
+      "type": "boolean",
+      "description": "The thread is published or not"
+    },
+    "published_at": {
+      "type": "string",
+      "description": "The thread's published time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "The thread's updated time"
+    }
+  }
+}

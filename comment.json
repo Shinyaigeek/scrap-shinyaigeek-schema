@@ -1,0 +1,32 @@
+{
+  "$id": "comment",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Comment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "The comment's id"
+    },
+    "author": {
+      "type": "string",
+      "description": "The comment's author"
+    },
+    "content": {
+      "type": "string",
+      "description": "The comment's content"
+    },
+    "thread": {
+      "type": "integer",
+      "description": "The thread's id where comment is posted"
+    },
+    "published_at": {
+      "type": "string",
+      "description": "The comment's published time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "The comment's updated time"
+    }
+  }
+}
